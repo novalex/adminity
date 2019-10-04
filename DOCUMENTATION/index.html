@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="shortcut icon" href="../favicon.gif" type="image/gif" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Adminity Documentation</title>
+ </head>
+<body>
+
+<div class="wrap">
+  <h1>'ADMINITY' DOCUMENTATION</h1>
+  <div class="highlight">
+    <ul>
+       <li><b>By Alex Nitu
+       (<a href="http://themeforest.net/user/novalex">NovAlex</a>)</b></li>
+       <li><b>Created:</b> 21.03.2012</li>
+    </ul>
+    <p>Thank you for purchasing this template.<br>
+    If you have questions or need support, please contact me via the contact form at my
+    <a href="http://themeforest.net/user/novalex">ThemeForest profile</a>.
+    </p>
+  </div>
+  <h3>TABLE OF CONTENTS</h3>
+  <ul class="toc">
+   <li>I. <a href="#introduction">Introduction</a></li>
+   <li>II. <a href="#structure">Structure</a></li>
+   <li>III. <a href="#elem">Elements</a></li>
+   <li>IV. <a href="#cst">CSS and Customizing</a></li>
+   <li>V. <a href="#assets">Assets and Plugins</a></li>
+  </ul>
+  <br>
+  <div class="content">
+   <h3 id="introduction">Introduction</h3>
+   <p>
+     <strong>Adminity</strong> is a full-featured, clean, beautiful admin template. All your website administration options
+     can be integrated in one complete and downright sexy interface. Adminity has a style for almost everything you could need. Featuring a fluid and adaptive layout, an Adminity page will automatically adapt to widths of as low as 320px ( the size of an iPhone screen ), all of this without changing a single line oh HTML. It's all done with CSS, and a tiny amount of jQuery code.<br><br>
+     Well optimized, semantic HTML 5, CSS and JS pages, ensure Adminity loads faster, and spare your server a lot of HTTP requests.<br><br>
+     <strong>I strongly recommend inspecting Adminity with your browser's Developer tools as you're reading the documentation, so you can get a much better understanding of its structure and code, and get a visual representation of the fierce underlying engine of Adminity.</strong>
+   </p>
+   <h3 id="structure">Structure</h3>
+   <p>
+     The file structure is:
+     <br><br>
+     <ul>
+      <li><strong>Main directory</strong>
+      <ul>
+       <li>index.html - the login page, AKA the gateway to pure beauty</li>
+       <li>dashboard.html - the homepage of Adminity, the dashboard</li>
+       <li>analytics.html - charts and analytics</li>
+       <li>tables.html - tables, Data Tables and unicorns (not really)</li>
+       <li>calendar.html - the calendar page</li>
+       <li>widgets.html - fancy things and flying hyper-intelligent monkeys</li>
+       <li>grid.html - the fluid grid of Adminity</li>
+       <li>filemanager.html - the file manager</li>
+       <li>gallery.html - the image gallery</li>
+       <li>icons.html - the icon page</li>
+       <li>Error Pages
+         <ul>
+           <li>403.html</li>
+           <li>404.html</li>
+           <li>503.html</li>
+         </ul>
+       </li>
+       <li>typography.html - headings, text formatting</li>
+       </ul>
+       <br>
+      <ul>
+      <li><strong>img directory - all images go here</strong>
+       <ul>
+       <li>icons - for the icons</li>
+       <li>colorpicker - images for the colorpicker</li>
+       <li>filemgr - images for the File Manager</li>
+       <li>forms - images for forms and inputs (at the moment only for the iPhone style checkbox)</li>
+       <li>lightbox - images for the image gallery lightbox</li>
+       <li>nav - images for the navigation menu</li>
+       <li>ui - images for jQuery UI and widgets</li>
+       </ul>
+      </li><br>
+      <li><strong>js directory - jQuery files and plugins</strong>
+       <ul>
+       <li>flot - files for the jQuery Flot chart plotting plugin</li>
+       <li>forms - files for forms and inputs</li>
+       <li>fullcalendar - files for the calendar</li>
+       <li>sh - files and brushes for the syntax highlighter</li><br>
+       <li><strong>REQUIRED</strong> - jquery-1.7.1.min.js - the main jQuery file</li>
+       <li><strong>REQUIRED</strong> - jquery-ui-1.8.17.min.js - the jQuery UI file</li>
+       <li><strong>REQUIRED</strong> - global.js - DO NOT REMOVE - the vital file for Adminity's full functionality</li>
+       <li>styler.js - the Adminity styler script file, can be removed if not needed (but be sure to also remove the styler from the header markup)</li>
+       <li>colorpicker.js - colorpicker plugin, required for changing colors, can be removed if not needed</li>
+       <li>elfinder.min.js - file manager plugin</li>
+       <li>jquery.dataTables.min.js - Data Tables plugin</li>
+       <li>jquery.lightbox-0.5.pack.js - image gallery lightbox plugin</li>
+       <li>jquery.tipTip.js - tooltip plugin</li>
+       <li>sticky.full.js - sticky notifications plugin</li>
+       <li>nicEdit.js - WYSIWYG text editor</li>
+       <li>forms/fileinput.js - jQuery code for file inputs (see "Forms and inputs")</li>
+       </ul>
+      </li><br>
+      <li><strong>php directory - server-side script files for elFinder File Manager</strong><br><br>
+        <li><strong>files directory - demo files for the elFinder File Manager</strong><br><br>
+      <li><strong>css directory - all styling (CSS) files</strong>
+       <ul>
+        <li><strong>REQUIRED</strong> - master.css - includes all necessary stylesheets for a standard Adminity page</li>
+        <li>ad.css - the main CSS file</li>
+        <li>reset.css - Eric Meyer's reset stylesheet</li>
+        <li>demo.css - stylesheet for demonstrational purposes, should be removed</li>
+        <li>colorpicker.css - stylesheet for the colorpicker</li>
+        <li>grid.css - stylesheet for the fluid grid system</li>
+        <li>filemgr.css - stylesheet for the File Manager</li>
+        <li>fullcalendar.css - stylesheet for the calendar</li>
+        <li>icons.css - stylesheet for the icons (large file)</li>
+        <li>jquery-ui.css - stylesheet for jQuery UI</li>
+        <li>tables.css - stylesheet for tables and the DataTables plugin</li>
+        <li>jquery.lightbox-0.5.css - stylesheet for the image gallery lightbox</li>
+        <li>iphone-check.css - stylesheet for the iPhone style checkbox</li>
+        <li>login.css - stylesheet for the login page</li>
+        <li>sticky.full.css - stylesheet for the Sticky Notifications plugin</li>
+        <li>tipTip.css - stylesheet for the TipTip tooltip plugin</li>
+       </ul>
+      </li>
+     </ul>
+     </ul><br>
+     The basic HTML structure of an Adminity page is:
+      <ul class="structure">
+       <li><h4>Header</h4>
+        <code>div class="header"</code>
+         The topmost section of the website, containing the logo and styler.
+       </li>
+
+       <li><h4>Top bar</h4>
+         <code>div class="top-bar"</code>
+         The top bar is underneath the header, and contains the user's panel and the navigation. The top bar
+         adapts to the screen size. On screens narrower than 1280px, the top bar moves to the left side and becomes vertical. On screens lower than 600px, the top bar becomes horizontal again, but the menu icons are downsized and some non-crucial elements are hidden. Also, the margins and paddings are decreased. Try resizing the browser window, to see what happens.
+         <code>NOTE: Due to CSS' method of calculating the page height, jQuery code is used to ensure the top bar stretches the entire height of the page when in vertical position. Because of this, when going back to horizontal position, the top bar covers the whole page for a little while until the javascript code kicks in and recalculates its height.</code>
+       </li>
+
+       <li><h4>Content</h4>
+       <code>div class="content container_12 / container_16" </code>
+       The page's content goes here. In order for the grid to display properly, aside from class content you must also add a class of either "container_12" for the 12 column grid or "container_16" for the 16 column grid. Then specify a class of "grid_1 to 12" or "grid_1 to 16" respectively for the element you are creating. To see all grid sizes, see the <a href="../grid.html" target="_blank">grid page</a>.
+       </li>
+
+       <li><h4>Footer</h4>
+       <code>div class="footer"</code>
+       'Tis the footer. Not very impressive, is it... Well, it's there if you ever need it...
+       </li>
+      </ul>
+    </p>
+   <h3 id="elem">Elements</h3>
+    <p>
+       Adminity was created with simplicity and ease of use in mind. For that purpose, the code is clean, simple and easy to understand. Creating elements in Adminity is very easy, and this section will show you how.
+
+       <h5>Box / Panel</h5>
+       The box, or panel, is a container for information. It has a header and body. Clicking on the header will collapse the box, in case you don't need that information anymore, it'll take less space. Another click will expand the box again.<br>To create a box all you need is 3 DIVs:<br><br>
+       <ul class="css-classes">
+         <li><i>div class="box grid_x"</i> - the box container, with class of box and whatever grid size you want it to be.</li>
+         <li><i>div class="box-head"</i> - the box header. If you want to have a title, include an H2 tag with the title inside the "box-head" div.</li>
+         <li><i>div class="box-content"</i> - the box content. All content for the box goes inside this div. By default, it has 10px of padding around it. If you don't want padding, add class "no-pad" next to "box-content".</li>
+       </ul><br>
+       You can also create a simple box. A simple box is not collapsible, and does not have a header. You can see examples on the <a href="../widgets.html" target="_blank">widget page</a>, where the buttons are. To create a simple box is even easier than a normal box.<br><br>
+       <ul class="css-classes">
+         <li><i>div class="sm-box grid_x"</i> - the simple box, with class of box and whatever grid size you want it to be.</li>
+         <li><i>span</i> - all content of the simple box goes into a span. <strong>Be sure to add a span to any simple box, without it the simple box would be just a grey rectangle</strong>. It has 10px padding around it. To add a title, add an H2 tag with your title <strong>inside the span</strong>.</li>
+       </ul><br>
+       Lastly, you can put icons in the box header. For the icon to properly align, you have to specify its size. All you need to do is add a span or div with the following class format in the "box-head" div, before the H2 tag:<br><br>
+       <ul class="css-classes">
+         <li><i>span class="box-icon-<em>size</em> silk accept"</i> - where size is either 16, 24 or 32, silk is the icon group, and accept is the icon from the silk group.</li>
+       </ul><br>
+
+       <h5>Notifications</h5>
+       Notifications are useful messages to inform, warn or confirm something to the user. You can see an informative notification on the dashboard page, right below the top bar, or you can see all types of notifications on the <a href="../widgets.html" target="_blank">widget page</a>. All notifications are dismissable by clicking on them. To create one is very easy:<br><br>
+       <ul class="css-classes">
+         <li><i>div class="ad-notif-error/success/warn/info grid_x"</i> - the div is the notification's body. There are four kinds of notifications: error (red with stripes), success (green), warn (yellow with stripes) or informative(blue). </li>
+         <li><i>paragraph (p)</i> - the paragraph holds the notification's message.</li>
+       </ul><br>
+
+       <h5>Buttons</h5>
+       Adminity has a variety of buttons, 3 sizes with 9 styles for each. All the types of buttons can be viewed on the <a href="../widgets.html" target="_blank">widget page</a>.<br><br>
+       <ul class="css-classes">
+         <li><i>input type="button" class="button size color"</i> - this turns a normal button into an Adminity styled button. For the class, you just need to specify "button" followed by the size small, normal (no size class needed, applied by default) or big, and finally, the color, green, red, blue, orange, purple, yellow, black, grey or disabled. Simple as that. </li>
+       </ul><br>
+
+       <h5>Icons</h5>
+       With Adminity, you have 4000+ icons at your disposal, ranging from 16x16px to 32x32px. And that's not even the best part. All icons are in a sprite format, bringing all 4000+ icons in only 10 sprite, web-optimized images, with a total size of a little over 1.50MB. You can view all icons on the <a href="../icons.html" target="_blank">icons page</a>.<br><br> When you hover over an icon, a useful tooltip will show you what class you need to give an element to turn it into the icon you are hovering. Also, to minimize HTTP requests, a jQuery code is used to ensure the icons.css stylesheet is only loaded if you are using an icon on the page you are creating. <br><br> Adding an icon is so easy, even my pet rock can do it! All it takes is to append the class that shows up when you hover over an icon to the element which you want to be the icon. For example:<br><br>
+       <ul class="css-classes">
+         <li><i>div class="silk accept"</i> - this will turn this div into the "silk accept" icon</li>
+       </ul><br>
+
+       <h5>Typography</h5>
+       Adminity uses the Open Sans webfont, by Steve Matteson. There are 5 preset font sizes: tiny, small, normal, big and huge. The white text-shadow gives paragraphs the letterpress effect. <a href="../typography.html" target="_blank">The typography page</a>.<br><br>
+       <ul class="css-classes">
+         <li><i>h1 - h6</i> - headings</li>
+         <li><i>p class="text-tiny"</i> - tiny, 9px font-size</li>
+         <li><i>p class="text-small"</i> - small, 10px font-size</li>
+         <li><i>p class="text-normal"</i> - applied by default, 12px font-size</li>
+         <li><i>p class="text-big"</i> - big, 14px font-size</li>
+         <li><i>p class="text-huge"</i> - huge, 16px font-size</li>
+         <li><i>p class="font-thin"</i> - font-weight 300 (book)</li>
+         <li><i>p class="font-bold"</i> - font-weight 600 (bold)</li>
+         <li><i>class="text-sh"</i> - applies the letterpress effect text-shadow</li>
+       </ul><br>
+
+       <h5>Forms and inputs</h5>
+       To display inputs like on the <a href="../widgets.html" target="_blank">widgets page</a>, you have to add the following markup:<br><br>
+       <ul class="css-classes">
+         <li><i>div class="form-row"</i> - to create the row, with 10px padding top and bottom</li>
+         <li><i>p/label class="form-label"</i> - the input's label</li>
+         <li><i>div class="form-item"</i> - the div for the input itself</li>
+       </ul>
+       <code><strong>Be sure to add a div class="clear" at the end of your forms or inputs to clear the floated elements and calculate the container's height properly!</strong></code>
+       To add an icon to the input, just add a span with the class "form-item" and the icon class after the input, inside the "form-item" div.<br><br>
+       <ul class="css-classes">
+         <li><i>span class="form-icon silk accept"</i> - this will ad the "silk accept" icon to the input</li>
+       </ul><br>
+       Now, for the notorious file input. Dreaded by designers, developers and the pirates of the seven seas, the file input is a lot trickier to style than a normal input, and does not remain consistent amongst all browsers. That's why most websites use jQuery code to create a "fake" file input, and hide the original one with CSS. So basically, there is a normal text input which is visible, and the original file input is placed over it with complete transparency. Adminity is no exception.<br><br>
+       <ul class="css-classes">
+         <li><i>div class="form-item file-upload"</i> - you need to add the additional "file-upload" class to the form-item div</li>
+         <li><i>input</i> - just an empty input which will act like the "fake" file input</li>
+         <li><i>input class="filebase" type="file"</i> - the original file input which will be hidden</li>
+       </ul><br>
+       The jQuery script will take over from here. It will create a span to simulate the file input text, and will change the span's text to the filename you have selected.
+
+       <h5>Other elements</h5>
+       Adminity has a lot of third-party elements, too many to include and explain in this documentation. But, what better way to get familiar with a plugin than to read the documentation on the plugin's own website? The documentation written by every plugin's author is much better than anyone else's.<br><br>
+       In the <strong>Assets and Plugins</strong> section you will find links to the websites of each plugin that Adminity uses, you can find each plugin's comprehensive documentation there.
+       <code>NOTE: I will provide full support for code written by me, but for third-party plugins, the best way to get help is from the author of the plugin himself or the plugin's community. I do not know the ins and outs of every plugin, so most of the times I won't be able to help you.</code>
+
+    <h3 id="cst">CSS and Customizing</h3>
+        All classes in Adminity are meant to be self-explanatory, so customizing Adminity to your taste should be relatively easy. This section of the documentation goes over some of the CSS code and provides clarification where needed. Most CSS classes have been explained in the <strong>Structure</strong> section.
+
+        <h5>Top Bar</h5>
+
+        <ul class="css-classes">
+          <li><i>.top-bar</i> - styling for the top-bar itself</li>
+          <li><i>.top-bar a</i> - styling for the top-bar links</li>
+          <br>
+          <li><i>#user-panel</i> - styling for the user panel</li>
+          <li><i>#usr-avatar</i> - styling for the user avatar</li>
+          <li><i>#usr-info</i> - styling for the user info</li>
+          <li><i>#usr-name</i> - styling for the user name ("Welcome back, Michael.")</li>
+          <li><i>#usr-notif</i> - styling for the user notification ("You have 6 notifications.")</li>
+          <br>
+          <li><i>#nav</i> - styling for the navigation</li>
+          <li><i>.nav-item</i> - styling for the navigation items</li>
+          <li><i>.nav-item img</i> - styling for the navigation item's icons</li>
+          <li><i>.sub-nav</i> - styling for the dropdown navigation</li>
+        </ul>
+
+        <h5>Boxes</h5>
+
+        <ul class="css-classes">
+          <li><i>.box</i> - styling for the boxes/panels</li>
+          <li><i>.box-head</i> - styling for the box/panel headers</li>
+          <li><i>.box-head h2</i> - styling for the box/panel header title</li>
+          <li><i>.box-content</i> - styling for the box/panel content container</li>
+          <li><i>.sm-box</i> - styling for the simple box/panel</li>
+          <li><i>.sm-box span</i> - styling for the simple box/panel content container</li>
+        </ul>
+
+        <h5>Styler</h5>
+
+        The styler is the element near the website logo which lets users choose a color for certain elements directly from a colorpicker.
+
+        <ul class="css-classes">
+          <li><i>.styler</i> - styling for the styler itself</li>
+          <li><i>.styler-active</i> - styling for the styler when completely shown</li>
+          <li><i>.styler-show</i> - styling for the styler's body which slides down when the styler icon is clicked</li>
+          <li><i>#colorSelector-top-bar/-box-head</i> - styling for the styler color selector boxes</li>
+        </ul>
+
+        <h5>Useful Classes</h5>
+
+        The useful classes are preset CSS styles that can be quickly and easily applied to a desired element.
+
+        <ul class="css-classes">
+          <li><i>.grad-ov</i> - applies a gradient overlay</li>
+          <li><i>.grad-ov-s</i> - applies a small gradient overlay</li>
+          <li><i>.mg</i> - applies a bottom margin of 20px</li>
+          <li><i>.small-mg</i> - applies a bottom margin of 10px</li>
+          <li><i>.no-pad</i> - removes all padding from element</li>
+          <li><i>.no-mg</i> - removes all margins from element</li>
+          <li><i>.clear</i> - clears all floated elements</li>
+          <li><i>.no-display</i> - applies "display: none" to element</li>
+        </ul><br>
+
+   <h3 id="assets">Assets and Plugins</h3>
+     These are the assets and plugins Adminity uses.
+     <br>
+    <h5>Graphic assets</h5>
+      Because Adminity is styled mostly with CSS, a PSD file of the whole website is unavailable, and would otherwise be pointless. The gradient effect is achieved by using transparent PNG images with an underlying color, so to change the colors no modification of the images is necessary.<br>
+      <h6>Icons</h6>
+      <ul>
+       <li><a href="http://www.famfamfam.com/">FamFamFam Silk icon set</a> (1000 icons)</li>
+       <li><a href="http://p.yusukekamiyamane.com/">Fugue icon set</a> (3400+ icons)</li>
+       <li><a href="http://www.greepit.com/open-source-icons-gcons/">Open Source icon set</a> (100 icons)</li>
+       <li><a href="http://pixel-mixer.com/">Basic icon set</a>, not in sprite format, used for the table toolbar (7 icons)</li>
+       <li><a href="http://glyphish.com/">Glyphish icon set</a>, not in sprite format, used for the navigation (27 icons, normal and active state + user avatar)</li>
+      </ul>
+      <h6>Background pattern - from <a href="subtlepatterns.com">SubtlePatterns</a></h6>
+
+    <h5>jQuery and Plugins</h5>
+      jQuery is responsible for Adminity's functionality, that and plugins from some awesome people.
+      <h6><a href="http://jquery.com/">jQuery 1.7.1</a></h6>
+      <h6><a href="http://jqueryui.com/">jQuery UI 1.8.17</a></h6>
+      <h6>Plugins</h6>
+      <ul>
+       <li><a href="http://code.google.com/p/flot/">Flot</a></li>
+       <li><a href="http://datatables.net/">DataTables</a></li>
+       <li><a href="http://arshaw.com/fullcalendar/">Full Calendar</a></li>
+       <li><a href="http://alexgorbatchev.com/SyntaxHighlighter/">Syntax Highlighter</a></li>
+       <li><a href="http://www.eyecon.ro/colorpicker/">Colorpicker</a></li>
+       <li><a href="http://elfinder.org/">elFinder File Manager</a></li>
+       <li><a href="http://leandrovieira.com/projects/jquery/lightbox/">Lightbox</a></li>
+       <li><a href="http://www.jqueryin.com/projects/spinner-jquery-preloader-plugin/">Preload Spinner</a></li>
+       <li><a href="http://code.drewwilson.com/entry/tiptip-jquery-plugin">TipTip Tooltip</a></li>
+       <li><a href="http://thrivingkings.com/sticky/">Sticky Notifications</a></li>
+       <li><a href="http://awardwinningfjords.com/2009/06/16/iphone-style-checkboxes.html">iPhone style checkboxes</a></li>
+       <li><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">jQuery Validate</a></li>
+       <li><a href="http://nicedit.com/">NicEdit WYSIWYG Text Editor</a></li>
+      </ul><br>
+
+
+
+
+<p><strong>Thank you again for purchasing this template, and I hope you will have a good experience with it. <br>If you run into any problems, please don't hesitate to contact me at my
+<a href="mailto:iliutanitu@gmail.com?Subject=Adminity%20Support">e-mail address</a> or my <a href="http://www.themeforest.com/user/novalex/">ThemeForest profile</a> contact form. I will gladly answer all questions.</strong></p><br>
+</div>
+</body>
+</html>
